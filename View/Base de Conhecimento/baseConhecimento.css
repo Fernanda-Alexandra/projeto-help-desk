@@ -1,0 +1,72 @@
+body{
+
+	padding:20px;
+	margin:20px 60px;
+	font-family:Arial;
+	font-size: 18px;
+	background-color:silver;
+}
+
+.principal{
+	width: 95%;
+	height: 720px;
+	background-color: white;
+	margin: 15px 15px 15px 15px;
+	border:1px inset purple;
+}
+
+.encabezado
+{
+	width: 97%;
+	height: 100px;
+	background-color: #66CDAA;
+	margin: 15px 15px 15px 15px ;
+	border:1px inset purple;
+}
+
+.pagina{
+	width: 97%;
+	height: 550px;
+	background-color: #66CDAA;
+	margin: 15px 15px 15px 15px ;
+	border:1px inset purple;
+	text-align:center;
+
+}
+.menu{
+	width: 20%;
+	height: 500px;
+	background-color: FFFFFF;
+	margin: 15px 15px 15px 15px ;
+	float: left;
+	border:1px inset purple;
+	text-align:left;
+
+}
+* {margin: 0; padding: 0; }
+body { background: #f1f1f1; margin: 50px; }
+
+#nav {} margin: 0; padding: 0; float: left; }
+#nav li { list-style: none; background: #ff; width: 250px; border-bottom: 1px solid #666; } 
+#nav li a { display: block; padding: 8px; border-left: 4px solid #444; text-decoration: none; box-shadow: 2px 2px 5px #ccc; color: #555; }
+#nav li a:hover { border-left: 4px solid #069; background: #f8f8f8; }
+#nav li ul { display: none; }
+#nav li:hover ul { display: block; }
+#nav li:hover ul li { background: #333; }
+#nav li:hover ul li a { color: #ccc; }
+#nav li:hover ul li a:hover { background: #222; border-left: 4px solid #900; }
+
+.contenido{
+	width: 73%;
+	height: 500px;
+	background-color: FFFFFF;
+	float: right;
+	margin: 15px 15px 15px 15px ;
+	border-color: black;
+	border:2px;
+	border:1px inset purple;
+	font-family:Arial;
+	font-size: 10px;
+
+}
+	

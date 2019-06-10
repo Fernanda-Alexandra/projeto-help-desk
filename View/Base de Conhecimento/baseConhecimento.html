@@ -1,0 +1,81 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="PSPad editor, www.pspad.com">
+	<title>Base de Conhecimento</title>
+
+	<link type="text/css" rel="stylesheet" href="estilos-formato.css" />
+	<link type="text/css" rel="stylesheet" href="baseconhecimento.css" />
+	<link type="text/css" rel="stylesheet" href="styles.css" />
+
+
+</style>
+
+</head>
+
+<body>
+
+
+	<div class="principal">
+
+		<div class="encabezado"> 
+			<h1><center>Optime</center></h1>
+		</div>
+
+
+		<div class="pagina">
+
+			<div class="menu">
+				<center><br>
+					<img src="Optime.png" alt="image" width="200px" height="150px">
+				</center>	  
+				<ul id="nav"> 
+					
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Página Inicial</a></li>
+					<li><a href="#">Base de Conhecimento</a>
+
+						<ul>
+							<li><a href="#">Hadware</a></li>
+							<li><a href="#">Software</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Usuários</a></li>
+				</ul>
+
+
+			</div>
+
+			<div>
+
+				<label for="nomeColunas"><b>Tire suas duvidas:</b></label>
+				<div class="form-group text-center" style="width: 68%; float: left;"> 
+					<input type="text" class="form-control" name="colunas[]" placeholder="Utilize palavras-chave">
+
+				</div>
+
+			</div>  
+			<script type="text/javascript">
+				startList = function() {
+					if (document.all&&document.getElementById) {
+						navRoot = document.getElementById("menuDropDown");
+						for (i=0; i<navRoot.childNodes.length; i++) {
+							node = navRoot.childNodes[i];
+							if (node.nodeName=="LI") {
+								node.onmouseover=function() {
+									this.className+=" over";
+								}
+								node.onmouseout=function() {
+									this.className=this.className.replace
+									(" over", "");
+								}
+							}
+						}
+					}
+				}
+				window.onload=startList;
+			</script>
+
+
+		</body>
+		</html>
