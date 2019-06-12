@@ -1,6 +1,9 @@
 <?php
 abstract class GenericController{
 
+  protected $repository;
+
+
      protected function index()
      {
        return $this->repository->findAll();
@@ -14,11 +17,8 @@ abstract class GenericController{
          return $this->repository->get($id);
       }
 	
-	protected $repository;
 	
 }
- protected function authenticate()
-     {
-      return $this->repository->authenticate() ;  
+
 
 ?>
