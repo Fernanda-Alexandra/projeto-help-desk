@@ -1,0 +1,49 @@
+
+<?php
+
+echo "HELLO WORLD";
+
+defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/exemplo-para-testar");
+require_once BASE_PATH . "/loader.php";
+
+final class Router
+{
+    function __construct() 
+    {
+     
+        $this->redirect();
+  
+    } 
+
+    private function redirect()
+    {
+     $uri =  isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '';
+      switch($uri)
+      {
+         case "/Categoria":
+            new CategoriaController();
+            $action = $_GET["../Controller/CategoriaController.php"];
+
+         break;
+
+         case "/Usuario":
+            new usuarioController();
+            $action = $_GET["../Controller/usuarioController.php"];
+         break;
+     
+         case "/Problema":
+             new problemaController();
+              $action = $_GET["../Controller/problemaController.php"];
+
+          case "/Solucao":
+             new solucaoController();
+              $action = $_GET["../Controller/solucaoController.php"];
+
+          default:
+          Logger::log("Controller não localizado"); 
+          
+      }
+    }
+}
+
+$ctrl = new Router();
