@@ -66,6 +66,11 @@
 		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
 		background-color: #4d4d4d !important;
 		}
+		.message h6 {
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); 
+			color: white;
+
+		}
 a {
     color: white;
     text-decoration: none;
