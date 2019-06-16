@@ -3,7 +3,7 @@
 
 echo "HELLO WORLD";
 
-defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/exemplo-para-testar");
+defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/projeto-help-desk");
 require_once BASE_PATH . "/loader.php";
 
 final class Router
