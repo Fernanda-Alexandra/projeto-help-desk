@@ -20,22 +20,22 @@ final class Router
      $uri =  isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '';
       switch($uri)
       {
-         case "/Categoria":
+         case "/categoria":
             new CategoriaController();
             $action = $_GET["../Controller/CategoriaController.php"];
 
          break;
 
-         case "/Usuario":
+         case "/usuario":
             new usuarioController();
             $action = $_GET["../Controller/usuarioController.php"];
          break;
      
-         case "/Problema":
+         case "/problema":
              new problemaController();
               $action = $_GET["../Controller/problemaController.php"];
 
-          case "/Solucao":
+          case "/solucao":
              new solucaoController();
               $action = $_GET["../Controller/solucaoController.php"];
 
