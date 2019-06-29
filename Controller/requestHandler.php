@@ -38,9 +38,7 @@ final class Router
           case "/solucao":
              new solucaoController();
               $action = $_GET["../Controller/solucaoController.php"];
-
-          default:
-          Logger::log("Controller não localizado"); 
+ 
           
       }
     }

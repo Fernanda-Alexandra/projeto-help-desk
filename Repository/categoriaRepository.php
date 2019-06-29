@@ -1,5 +1,5 @@
 <?php
-class CategoriaRepository extends GenericRepsoitory
+class CategoriaRepository extends GenericRepository
 {
 
 

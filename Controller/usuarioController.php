@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Repository/usuarioRepository.php";
+require_once "./Repository/usuarioRepository.php";
 class UsuarioController extends GenericController {
 	
 	function __construct() {

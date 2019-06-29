@@ -1,5 +1,5 @@
 <?php
- class ProblemaRepository extends GenericRepository {
+ class SolucaoRepository extends GenericRepository {
 
     function __construct() {
         $this->table = "solucoes";
