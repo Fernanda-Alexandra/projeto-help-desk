@@ -18,7 +18,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-					<form action="../Controller/requestHandler.php/usuario?action=autenticar">
+					<form action="../../Controller/requestHandler.php/usuario?action=authenticate">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -31,17 +31,19 @@
 							</div>
 							<input type="password" name="" class="form-control input_pass" value="" placeholder="Senha">
 						</div>
-					</form>
-				</div>
-				<div class="d-flex justify-content-center mt-3 login_container">
-					<button type="submit" name="button" class="btn login_btn"><a href="../Principal/principal.html">Entrar</a></button>
-				</div>
-				<div class="d-flex justify-content-center mt-3 login_container">
-					<button type="button" name="button" class="btn login_btn"><a href="../Cadastrar/Cadastrar.html">Cadastre-se</a></button>
 
-				</div>
+					</div>
+					<div class="d-flex justify-content-center mt-3 login_container">
+						<input type="submit" id="entrar"  class="btn login_btn" value="Entrar">
+					</div>
+					<div class="d-flex justify-content-center mt-3 login_container">
+						<input type="button" name="button" class="btn login_btn" value="Cadastre-se">
+
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>
