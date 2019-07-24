@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -18,7 +19,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-					<form action="../../Controller/requestHandler.php/usuario?action=authenticate">
+					<form action="../../Controller/requestHandler.php/usuario?action=authenticate" method="post">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -29,7 +30,7 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="Senha">
+							<input type="password" name="" class="form-control input_pass" value="" size="10" maxlength="10" placeholder="10 dígitos">
 						</div>
 
 					</div>
@@ -37,7 +38,7 @@
 						<input type="submit" id="entrar"  class="btn login_btn" value="Entrar">
 					</div>
 					<div class="d-flex justify-content-center mt-3 login_container">
-						<input type="button" name="button" class="btn login_btn" value="Cadastre-se">
+						<input type="submit" name="cadastre" class="btn login_btn" value="Cadastre-se">
 
 					</div>
 				</form>
