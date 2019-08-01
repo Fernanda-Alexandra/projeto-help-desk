@@ -54,14 +54,11 @@ class UsuarioController extends GenericController {
     public  final function logIn()
     {
         
-        //$login = htmlspecialchars($_POST["login"]);  
-        //$senha = htmlspecialchars($_POST["senha"]);
-        //echo "login".$login.$senha;
-        var_dump($_POST);
-        echo"Login".$_POST;
-
-        
-        $autenticado =  $this->usuarioRepository->authenticate($login, $senha);
+        $login = htmlspecialchars($_POST["login"]);  
+        $senha = htmlspecialchars($_POST["senha"]);
+   
+     
+        $autenticado =  $this->repository->authenticate($login, $senha);
 
         if($autenticado)
         {
@@ -80,7 +77,9 @@ class UsuarioController extends GenericController {
 
         }        
     }
-
+public final function home(){
+	echo "<br>Implemente um metodo para redirecionar o usuario para a home da aplicacao";
+}
     public  final function logOff()
     {
 
