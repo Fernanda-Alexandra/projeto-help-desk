@@ -7,16 +7,19 @@ class UsuarioController extends GenericController {
 		parent::__construct();
 		$this->table = "usuarios";
 		$this->repository =  new UsuarioRepository();
+        var_dump($this->repository);
         $this->getParams();
-        echo "O usuário chegou!!";
+
+
 
 
     }
 
     function authenticate($user, $pass) {
-        echo "Chegou authenticate".$user;
+
 
         return $this->repository->authenticate($user,$pass);
+
 
 
     }
@@ -26,7 +29,7 @@ class UsuarioController extends GenericController {
         
         if($acao)
         {
-            echo "ação".$acao;
+
             switch ($acao) {
                 case "authenticate":
                 $this->logIn();
@@ -53,12 +56,6 @@ class UsuarioController extends GenericController {
 
     public  final function logIn()
     {
-        
-        $login = htmlspecialchars($_POST["login"]);  
-        $senha = htmlspecialchars($_POST["senha"]);
-   
-     
-        $autenticado =  $this->repository->authenticate($login, $senha);
 
         if($autenticado)
         {
@@ -120,13 +117,13 @@ public final function home(){
 
     public final function loginExiste($login)
     {
-       return  $this->usuarioRepository->loginExiste($login);
+     return  $this->usuarioRepository->loginExiste($login);
 
-   }
-   public final function redirecionarParaCadastro()
-   {
+ }
+ public final function redirecionarParaCadastro()
+ {
     //Redirecione o usuario com header para a tela de cadastro.
-   }
+ }
 
 
 
