@@ -44,7 +44,7 @@ abstract class GenericController{
                 break;
                 
                 default:
-                echo "<b>[WARNING] A ação solicitada não é reconhecida</b>";
+               // echo "<b>[WARNING] A ação solicitada não é reconhecida</b>";
                         }
 
     }  
