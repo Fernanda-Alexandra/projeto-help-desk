@@ -4,6 +4,9 @@ class UsuarioRepository extends GenericRepository
 	
 	function __construct() {
 		$this->table = "usuarios";
+		echo "PASSANDO NO CONSTRUTOR USUARIOREPOSITORY";
+		var_dump($this->repository);
+        die();
 		
 	}
 	
