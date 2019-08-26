@@ -1,5 +1,4 @@
 <?php
-require_once "../Repository/categoriaRepository.php";
 
 class CategoriaController extends GenericController 
 {

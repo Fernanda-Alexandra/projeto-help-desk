@@ -1,5 +1,4 @@
 <?php
-require_once "../Repository/problemaRepository.php";
 
 class ProblemaController extends GenericController {
 	

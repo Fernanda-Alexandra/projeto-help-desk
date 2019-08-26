@@ -1,19 +1,21 @@
 <?php
-defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/projeto-help-desk");
+defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/help-desk");
 class UsuarioController extends GenericController {
 
     function __construct() {
+        echo "TEM QUE APARECER";
         parent::__construct();
         $this->table = "usuarios";
-        $this->repository =  new usuarioRepository();
+        $this->repository = "teste";
         echo "VERIFICANDO CONSTRUTOR";
         var_dump($this->repository);
-        die();
-        //$this->getParams();
+        //die();
+        $this->getParams();
+        echo "CHEGANDO NO AUTHENTICATE ";
     }
     function authenticate($user, $pass) {
         var_dump($this->repository);
-        die();
+        //die();
 
         return $this->repository->authenticate($user,$pass);
 

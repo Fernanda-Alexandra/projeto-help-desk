@@ -1,10 +1,15 @@
 
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/help-desk");
+set_include_path(BASE_PATH);
 
 
-defined('BASE_PATH') or define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . "/projeto-help-desk");
-require_once BASE_PATH . "/loader.php";
+echo BASE_PATH;
+require_once "../loader.php";
 
 final class Router
 {
